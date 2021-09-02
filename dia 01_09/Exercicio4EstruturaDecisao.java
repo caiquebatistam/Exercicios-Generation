@@ -13,7 +13,7 @@ public class Exercicio4EstruturaDecisao {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		double num,raizQuadrada=0.0;
+		double num,raizQuadrada=0.0,numQuadrado=0.0;
 		
 		Scanner leia = new Scanner(System.in);
 		
@@ -21,13 +21,14 @@ public class Exercicio4EstruturaDecisao {
 		num = leia.nextDouble();
 		
 		
-		if (num%2==0)
+		if (num%2==0)  %
 		{
-			System.out.println("\nO número é Par");
+			raizQuadrada=Math.sqrt(num);
+			System.out.println("\nO número é Par"+raizQuadrada);
 		}
 		else 
-			raizQuadrada=Math.sqrt(num);
-			System.out.println("\nO número é Impar, e sua raiza quadrada é :  "+raizQuadrada);
+			numQuadrado=Math.pow(num,2);
+			System.out.println("\nO número é Impar, e sua raiza quadrada é :  "+numQuadrado);
 		
 
 	}
